@@ -1,0 +1,138 @@
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Shield, Eye, Users, Settings, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const Privacy = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-background">
+      {/* Header */}
+      <header className="border-b bg-background/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <Link to="/">
+              <Button variant="ghost" size="sm" className="gap-2">
+                <ArrowLeft className="h-4 w-4" />
+                Back to Home
+              </Button>
+            </Link>
+            <div className="flex items-center gap-2">
+              <Shield className="h-6 w-6 text-primary" />
+              <span className="font-semibold text-text-heading">Make Me Productive</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-12 max-w-4xl">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
+            <Shield className="h-8 w-8 text-primary" />
+          </div>
+          <h1 className="text-4xl font-bold text-text-heading mb-4">Privacy Policy</h1>
+          <p className="text-lg text-text-body max-w-2xl mx-auto">
+            Your privacy is our priority. Learn how <strong>Make Me Productive – YouTube Focus Filter</strong> handles your data.
+          </p>
+        </div>
+
+        <Card className="p-8 shadow-[var(--shadow-medium)] border-0 bg-card/60 backdrop-blur-sm">
+          <div className="prose prose-gray max-w-none">
+            <div className="mb-8 p-6 bg-muted/50 rounded-lg border">
+              <p className="text-text-body leading-relaxed m-0">
+                <strong>Make Me Productive – YouTube Focus Filter</strong> is a Chrome extension designed to help users stay focused by allowing them to hide distracting sections on YouTube like sidebars, comments, and home recommendations.
+              </p>
+            </div>
+
+            <section className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Eye className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-2xl font-semibold text-text-heading m-0">What data do we collect?</h2>
+              </div>
+              <p className="text-text-body leading-relaxed">
+                We do <strong>not</strong> collect, store, or transmit any personal data, browsing history, or identifiable information from users.
+              </p>
+            </section>
+
+            <section className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Settings className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-2xl font-semibold text-text-heading m-0">How is information used?</h2>
+              </div>
+              <p className="text-text-body leading-relaxed">
+                User preferences (e.g., which sections to hide) are stored locally using Chrome's <code className="bg-muted px-2 py-1 rounded text-sm">storage</code> API and used solely to enhance user experience. No data is ever sent to external servers.
+              </p>
+            </section>
+
+            <section className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Users className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-2xl font-semibold text-text-heading m-0">Third-party access</h2>
+              </div>
+              <p className="text-text-body leading-relaxed">
+                No data is shared with third parties. The extension works entirely offline within your browser.
+              </p>
+            </section>
+
+            <section className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Shield className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-2xl font-semibold text-text-heading m-0">Permissions</h2>
+              </div>
+              <p className="text-text-body leading-relaxed">
+                We use Chrome permissions such as <code className="bg-muted px-2 py-1 rounded text-sm">storage</code>, <code className="bg-muted px-2 py-1 rounded text-sm">tabs</code>, <code className="bg-muted px-2 py-1 rounded text-sm">scripting</code>, and <code className="bg-muted px-2 py-1 rounded text-sm">host_permissions for youtube.com</code> to perform core functionality like modifying the YouTube layout based on your preferences.
+              </p>
+            </section>
+
+            <section className="mb-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Settings className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-2xl font-semibold text-text-heading m-0">Changes to This Policy</h2>
+              </div>
+              <p className="text-text-body leading-relaxed">
+                This privacy policy may be updated in the future. Any changes will be posted on this page.
+              </p>
+            </section>
+
+            <section className="mb-0">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Mail className="h-5 w-5 text-primary" />
+                </div>
+                <h2 className="text-2xl font-semibold text-text-heading m-0">Contact</h2>
+              </div>
+              <p className="text-text-body leading-relaxed">
+                If you have any questions or concerns about this policy, please contact the developer at: 
+                <a href="mailto:sahithyabalasubramaniam@gmail.com" className="text-primary hover:underline ml-1">
+                  sahithyabalasubramaniam@gmail.com
+                </a> or 
+                <a href="mailto:baserockservices@gmail.com" className="text-primary hover:underline ml-1">
+                  baserockservices@gmail.com
+                </a>
+              </p>
+            </section>
+          </div>
+        </Card>
+
+        {/* Footer */}
+        <div className="text-center mt-12 pt-8 border-t">
+          <p className="text-text-muted text-sm">
+            Last updated: {new Date().toLocaleDateString()}
+          </p>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default Privacy;
