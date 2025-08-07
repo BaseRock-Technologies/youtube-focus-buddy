@@ -11,7 +11,7 @@ const Privacy = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-center">
             <div className="flex items-center gap-2">
-              <Shield className="h-6 w-6 text-primary" />
+              <img src="/lovable-uploads/cb864109-59fe-487b-abe1-ea198715f97a.png" alt="Make Me Productive" className="h-6 w-6" />
               <span className="font-semibold text-text-heading">Make Me Productive</span>
             </div>
           </div>
@@ -22,7 +22,7 @@ const Privacy = () => {
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
-            <Shield className="h-8 w-8 text-primary" />
+            <img src="/lovable-uploads/cb864109-59fe-487b-abe1-ea198715f97a.png" alt="Make Me Productive" className="h-8 w-8" />
           </div>
           <h1 className="text-4xl font-bold text-text-heading mb-4">Privacy Policy</h1>
           <p className="text-lg text-text-body max-w-2xl mx-auto">
