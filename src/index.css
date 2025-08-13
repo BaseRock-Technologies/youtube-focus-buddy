@@ -41,8 +41,6 @@ All colors MUST be HSL.
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(142 76% 97%));
     --shadow-soft: 0 2px 8px hsl(215 25% 27% / 0.08);
     --shadow-medium: 0 4px 16px hsl(215 25% 27% / 0.12);
-    --shadow-elegant: 0 10px 30px -10px hsl(142 76% 56% / 0.15);
-    --shadow-glow: 0 0 40px hsl(142 76% 70% / 0.2);
     --text-heading: hsl(215 35% 15%);
     --text-body: hsl(215 20% 35%);
     --text-muted: hsl(215 16% 47%);
