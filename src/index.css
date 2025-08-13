@@ -17,49 +17,37 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 142 76% 55%;
+    --primary: 142 76% 56%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 30% 90%;
-    --secondary-foreground: 142 76% 20%;
+    --secondary: 142 76% 97%;
+    --secondary-foreground: 215 25% 27%;
 
-    --muted: 142 30% 95%;
-    --muted-foreground: 140 5% 35%;
+    --muted: 142 76% 97%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 165 76% 45%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 142 76% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 142 30% 82%;
-    --input: 142 30% 85%;
-    --ring: 142 76% 36%;
+    --border: 216 18% 88%;
+    --input: 216 18% 88%;
+    --ring: 142 76% 56%;
 
-    /* Funky Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary-glow)));
-    --gradient-rainbow: linear-gradient(135deg, #00ff88, #00ccff, #ff6b9d, #ffd93d);
-    --gradient-glow: linear-gradient(135deg, hsl(var(--primary-glow) / 0.8), hsl(var(--accent) / 0.6));
-    --gradient-funky: linear-gradient(45deg, #ff6b9d, #00ff88, #00ccff, #ffd93d);
-    
-    /* Funky Shadows & Effects */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.4);
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.6);
-    --shadow-funky: 0 15px 35px -5px rgba(255, 107, 157, 0.3), 0 5px 15px -5px rgba(0, 255, 136, 0.2);
-    --shadow-rainbow: 0 10px 30px -5px rgba(255, 107, 157, 0.4), 0 20px 40px -10px rgba(0, 204, 255, 0.3);
-    
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --transition-elastic: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    
-    /* Text Colors */
-    --text-heading: var(--foreground);
-    --text-body: var(--muted-foreground);
-    --text-muted: hsl(var(--muted-foreground) / 0.7);
+    /* Custom tokens for professional design */
+    --gradient-primary: linear-gradient(135deg, hsl(142 76% 56%), hsl(142 76% 70%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(142 76% 97%));
+    --shadow-soft: 0 2px 8px hsl(215 25% 27% / 0.08);
+    --shadow-medium: 0 4px 16px hsl(215 25% 27% / 0.12);
+    --shadow-elegant: 0 10px 30px -10px hsl(142 76% 56% / 0.15);
+    --shadow-glow: 0 0 40px hsl(142 76% 70% / 0.2);
+    --text-heading: hsl(215 35% 15%);
+    --text-body: hsl(215 20% 35%);
+    --text-muted: hsl(215 16% 47%);
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -124,44 +112,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-/* Funky Utilities */
-@layer utilities {
-  .hover-scale {
-    @apply transition-transform duration-300 hover:scale-105;
-  }
-  
-  .bg-gradient-primary {
-    background: var(--gradient-primary);
-  }
-  
-  .bg-gradient-rainbow {
-    background: var(--gradient-rainbow);
-  }
-  
-  .bg-gradient-funky {
-    background: var(--gradient-funky);
-  }
-  
-  .bg-gradient-glow {
-    background: var(--gradient-glow);
-  }
-  
-  .shadow-funky {
-    box-shadow: var(--shadow-funky);
-  }
-  
-  .shadow-rainbow {
-    box-shadow: var(--shadow-rainbow);
-  }
-  
-  .shadow-elegant {
-    box-shadow: var(--shadow-elegant);
-  }
-  
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
   }
 }

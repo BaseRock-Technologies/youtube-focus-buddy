@@ -6,11 +6,7 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 relative overflow-hidden">
-      {/* Floating decorative elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-funky rounded-full opacity-20 animate-bounce"></div>
-      <div className="absolute top-40 right-20 w-20 h-20 bg-gradient-rainbow rounded-full opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-40 left-20 w-16 h-16 bg-gradient-glow rounded-full opacity-25 animate-bounce"></div>
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       {/* Header */}
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
@@ -36,44 +32,41 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <Badge className="mb-6 bg-gradient-rainbow text-white border-0 animate-pulse shadow-rainbow px-6 py-2 text-lg font-bold">
-            🚀 YouTube Focus Buddy ✨
+          <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
+            YouTube Focus Filter
           </Badge>
-          <h1 className="text-6xl md:text-7xl font-black text-text-heading mb-6 leading-tight animate-fade-in">
-            Make Me <span className="bg-gradient-funky bg-clip-text text-transparent animate-pulse">Productive</span> 
-            <br />
-            <span className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">YouTube Focus Buddy</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-text-heading mb-6 leading-tight">
+            Reclaim Your Focus on 
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> YouTube</span>
           </h1>
-          <p className="text-2xl md:text-3xl text-text-body mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in font-bold">
-            🎯 Stay focused, reduce distractions, and make your YouTube time <span className="bg-gradient-primary bg-clip-text text-transparent">intentional</span>!
+          <p className="text-xl text-text-body mb-8 max-w-2xl mx-auto leading-relaxed">
+            Hide distracting sections like sidebars, comments, and home recommendations. 
+            Stay focused on what matters with our privacy-first Chrome extension.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in">
-            <Button size="lg" className="bg-gradient-funky text-white hover:scale-110 shadow-rainbow text-xl px-8 py-4 rounded-2xl font-black transition-all duration-500 hover:shadow-2xl animate-bounce">
-              <Zap className="w-6 h-6 mr-3 animate-pulse" />
-              🚀 Install Extension NOW!
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Button size="lg" className="bg-gradient-primary text-white hover:opacity-90 shadow-elegant">
+              <Zap className="w-5 h-5 mr-2" />
+              Install Extension
             </Button>
-            <Button size="lg" variant="outline" className="border-4 border-primary/50 hover:bg-gradient-glow hover:text-white hover:scale-110 text-xl px-8 py-4 rounded-2xl font-bold transition-all duration-500 hover:shadow-funky">
-              <Eye className="w-6 h-6 mr-3" />
-              👀 See Magic Demo
+            <Button size="lg" variant="outline" className="border-primary/20 hover:bg-primary/5">
+              <Eye className="w-5 h-5 mr-2" />
+              See Demo
             </Button>
           </div>
           
-          {/* Funky Stats */}
-          <div className="grid grid-cols-3 gap-8 max-w-xl mx-auto animate-fade-in">
-            <div className="text-center group cursor-pointer">
-              <div className="text-4xl font-black bg-gradient-funky bg-clip-text text-transparent group-hover:scale-125 transition-transform duration-500 animate-pulse">💯</div>
-              <div className="text-lg font-bold text-primary">Privacy First</div>
-              <div className="text-sm text-text-muted">Zero snooping!</div>
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-8 max-w-md mx-auto">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">100%</div>
+              <div className="text-sm text-text-muted">Privacy First</div>
             </div>
-            <div className="text-center group cursor-pointer">
-              <div className="text-4xl font-black bg-gradient-rainbow bg-clip-text text-transparent group-hover:scale-125 transition-transform duration-500 animate-pulse">0️⃣</div>
-              <div className="text-lg font-bold text-primary">Data Stolen</div>
-              <div className="text-sm text-text-muted">Nada collected</div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">0</div>
+              <div className="text-sm text-text-muted">Data Collected</div>
             </div>
-            <div className="text-center group cursor-pointer">
-              <div className="text-4xl font-black bg-gradient-primary bg-clip-text text-transparent group-hover:scale-125 transition-transform duration-500 animate-pulse">⚡</div>
-              <div className="text-lg font-bold text-primary">Setup Time</div>
-              <div className="text-sm text-text-muted">Lightning fast</div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-primary">1-Click</div>
+              <div className="text-sm text-text-muted">Setup</div>
             </div>
           </div>
         </div>
@@ -82,226 +75,144 @@ const Index = () => {
       {/* Features Section */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black text-text-heading mb-6 animate-fade-in">
-            ✨ <span className="bg-gradient-funky bg-clip-text text-transparent">Powerful Features</span> ✨
+          <h2 className="text-3xl md:text-4xl font-bold text-text-heading mb-4">
+            Powerful Features
           </h2>
-          <p className="text-xl text-text-body max-w-3xl mx-auto animate-fade-in font-bold">
-            🔥 Everything you need to become a YouTube productivity ninja! 🥷
+          <p className="text-lg text-text-body max-w-2xl mx-auto">
+            Everything you need to maintain focus while browsing YouTube
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="border-0 bg-gradient-to-br from-card via-primary/5 to-accent/10 hover:shadow-rainbow hover:-translate-y-2 hover:rotate-1 transition-all duration-500 animate-fade-in rounded-3xl overflow-hidden">
-            <CardHeader className="relative">
-              <div className="w-16 h-16 bg-gradient-funky rounded-2xl flex items-center justify-center mb-4 hover:rotate-12 transition-transform duration-300 shadow-funky">
-                <Eye className="w-8 h-8 text-white animate-pulse" />
+          <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant">
+            <CardHeader>
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <Eye className="w-6 h-6 text-white" />
               </div>
-              <CardTitle className="text-2xl font-black text-primary">🚫 Distraction-Free Mode</CardTitle>
-              <CardDescription className="text-base font-semibold text-text-body">
-                Hide recommendations, comments, and other tempting content that pulls you off track! 🎯
+              <CardTitle>Hide Distractions</CardTitle>
+              <CardDescription>
+                Remove sidebars, comments, and recommendations that pull your attention away from your content.
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="border-0 bg-gradient-to-br from-card via-accent/5 to-primary/10 hover:shadow-rainbow hover:-translate-y-2 hover:rotate-1 transition-all duration-500 animate-fade-in rounded-3xl overflow-hidden">
-            <CardHeader className="relative">
-              <div className="w-16 h-16 bg-gradient-rainbow rounded-2xl flex items-center justify-center mb-4 hover:rotate-12 transition-transform duration-300 shadow-funky">
-                <Clock className="w-8 h-8 text-white animate-pulse" />
+          <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant">
+            <CardHeader>
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <Focus className="w-6 h-6 text-white" />
               </div>
-              <CardTitle className="text-2xl font-black text-primary">⏰ Custom Focus Timer</CardTitle>
-              <CardDescription className="text-base font-semibold text-text-body">
-                Set time limits for watching videos to prevent overconsumption and maintain productivity! ⚡
+              <CardTitle>Custom Controls</CardTitle>
+              <CardDescription>
+                Choose exactly which sections to hide. Customize your YouTube experience to match your focus needs.
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="border-0 bg-gradient-to-br from-card via-primary/10 to-accent/5 hover:shadow-rainbow hover:-translate-y-2 hover:rotate-1 transition-all duration-500 animate-fade-in rounded-3xl overflow-hidden">
-            <CardHeader className="relative">
-              <div className="w-16 h-16 bg-gradient-glow rounded-2xl flex items-center justify-center mb-4 hover:rotate-12 transition-transform duration-300 shadow-funky">
-                <CheckCircle className="w-8 h-8 text-white animate-pulse" />
+          <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant">
+            <CardHeader>
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <Shield className="w-6 h-6 text-white" />
               </div>
-              <CardTitle className="text-2xl font-black text-primary">✅ Channel Whitelisting</CardTitle>
-              <CardDescription className="text-base font-semibold text-text-body">
-                Allow only specific educational channels or playlists that match your learning goals! 🎓
+              <CardTitle>Privacy First</CardTitle>
+              <CardDescription>
+                No data collection, no tracking, no external servers. Your preferences stay on your device.
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="border-0 bg-gradient-to-br from-card via-accent/10 to-primary/5 hover:shadow-rainbow hover:-translate-y-2 hover:rotate-1 transition-all duration-500 animate-fade-in rounded-3xl overflow-hidden">
-            <CardHeader className="relative">
-              <div className="w-16 h-16 bg-gradient-funky rounded-2xl flex items-center justify-center mb-4 hover:rotate-12 transition-transform duration-300 shadow-funky">
-                <Zap className="w-8 h-8 text-white animate-pulse" />
+          <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant">
+            <CardHeader>
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <Clock className="w-6 h-6 text-white" />
               </div>
-              <CardTitle className="text-2xl font-black text-primary">⚡ Break Reminders</CardTitle>
-              <CardDescription className="text-base font-semibold text-text-body">
-                Get gentle nudges to take a break or return to work when your time is up! ⏰
+              <CardTitle>Instant Setup</CardTitle>
+              <CardDescription>
+                One-click installation with immediate effect. No configuration required to get started.
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="border-0 bg-gradient-to-br from-card via-primary/5 to-accent/10 hover:shadow-rainbow hover:-translate-y-2 hover:rotate-1 transition-all duration-500 animate-fade-in rounded-3xl overflow-hidden">
-            <CardHeader className="relative">
-              <div className="w-16 h-16 bg-gradient-rainbow rounded-2xl flex items-center justify-center mb-4 hover:rotate-12 transition-transform duration-300 shadow-funky">
-                <Focus className="w-8 h-8 text-white animate-pulse" />
+          <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant">
+            <CardHeader>
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <Zap className="w-6 h-6 text-white" />
               </div>
-              <CardTitle className="text-2xl font-black text-primary">🎨 Minimalist UI</CardTitle>
-              <CardDescription className="text-base font-semibold text-text-body">
-                Simple, clean interface that integrates smoothly into YouTube without clutter! ✨
+              <CardTitle>Lightweight</CardTitle>
+              <CardDescription>
+                Minimal resource usage that won't slow down your browser or YouTube experience.
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="border-0 bg-gradient-to-br from-card via-accent/5 to-primary/10 hover:shadow-rainbow hover:-translate-y-2 hover:rotate-1 transition-all duration-500 animate-fade-in rounded-3xl overflow-hidden">
-            <CardHeader className="relative">
-              <div className="w-16 h-16 bg-gradient-glow rounded-2xl flex items-center justify-center mb-4 hover:rotate-12 transition-transform duration-300 shadow-funky">
-                <Shield className="w-8 h-8 text-white animate-pulse" />
+          <Card className="border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant">
+            <CardHeader>
+              <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
+                <CheckCircle className="w-6 h-6 text-white" />
               </div>
-              <CardTitle className="text-2xl font-black text-primary">🔒 Privacy First</CardTitle>
-              <CardDescription className="text-base font-semibold text-text-body">
-                No data collection or storage. All settings are stored locally in your browser! 🛡️
+              <CardTitle>Always Updated</CardTitle>
+              <CardDescription>
+                Regular updates ensure compatibility with YouTube's latest changes and improvements.
               </CardDescription>
             </CardHeader>
           </Card>
-        </div>
-      </section>
-
-      {/* Perfect For */}
-      <section className="bg-gradient-to-r from-primary/10 via-accent/20 to-primary/10 py-20 relative overflow-hidden">
-        {/* Floating shapes */}
-        <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-funky rounded-full opacity-20 animate-bounce"></div>
-        <div className="absolute bottom-10 right-10 w-16 h-16 bg-gradient-rainbow rounded-full opacity-30 animate-pulse"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black text-text-heading mb-6 animate-fade-in">
-              🎯 <span className="bg-gradient-rainbow bg-clip-text text-transparent">Perfect For</span> 🎯
-            </h2>
-            <p className="text-xl text-text-body max-w-3xl mx-auto animate-fade-in font-bold">
-              Whether you're learning, working, or just trying to avoid endless binge-watching! 🚀
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-funky rounded-3xl flex items-center justify-center text-4xl font-black mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce shadow-rainbow">
-                📚
-              </div>
-              <h3 className="text-2xl font-black text-primary mb-3">Students</h3>
-              <p className="text-lg font-semibold text-text-body">Use YouTube for study without falling into the "just one more video" loop! 🎓</p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-rainbow rounded-3xl flex items-center justify-center text-4xl font-black mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce shadow-rainbow">
-                💼
-              </div>
-              <h3 className="text-2xl font-black text-primary mb-3">Professionals</h3>
-              <p className="text-lg font-semibold text-text-body">Maintain focus during work hours while accessing educational content! 💪</p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-20 h-20 bg-gradient-glow rounded-3xl flex items-center justify-center text-4xl font-black mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 animate-bounce shadow-rainbow">
-                🚀
-              </div>
-              <h3 className="text-2xl font-black text-primary mb-3">Self-Learners</h3>
-              <p className="text-lg font-semibold text-text-body">Track and manage your learning sessions with purposeful YouTube time! 🎯</p>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-black text-text-heading mb-6 animate-fade-in">
-            🚀 <span className="bg-gradient-funky bg-clip-text text-transparent">How It Works</span> 🚀
-          </h2>
-          <p className="text-xl text-text-body max-w-3xl mx-auto animate-fade-in font-bold">
-            Get focused in three simple steps! ⚡
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-rainbow animate-bounce">
-              1
-            </div>
-            <h3 className="text-2xl font-black text-primary mb-3">🔌 Install & Pin</h3>
-            <p className="text-lg font-semibold text-text-body">Install the extension and pin it to your browser for easy access!</p>
-          </div>
-
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-gradient-rainbow rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-rainbow animate-bounce">
-              2
-            </div>
-            <h3 className="text-2xl font-black text-primary mb-3">⚙️ Set Preferences</h3>
-            <p className="text-lg font-semibold text-text-body">Configure your focus settings: time limits, whitelist channels, break reminders!</p>
-          </div>
-
-          <div className="text-center group">
-            <div className="w-20 h-20 bg-gradient-funky rounded-full flex items-center justify-center text-white text-3xl font-black mx-auto mb-6 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500 shadow-rainbow animate-bounce">
-              3
-            </div>
-            <h3 className="text-2xl font-black text-primary mb-3">🎯 Stay Focused</h3>
-            <p className="text-lg font-semibold text-text-body">Use YouTube as usual — distractions filtered, reminders keeping you on track!</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Privacy Section */}
-      <section className="bg-gradient-to-r from-accent/10 via-primary/20 to-accent/10 py-20 relative overflow-hidden">
-        {/* More floating elements */}
-        <div className="absolute top-20 right-20 w-24 h-24 bg-gradient-rainbow rounded-full opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-18 h-18 bg-gradient-funky rounded-full opacity-25 animate-bounce"></div>
-        
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-black text-text-heading mb-8 animate-fade-in">
-              🔒 <span className="bg-gradient-glow bg-clip-text text-transparent">Privacy First</span> 🔒
+      <section className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-heading mb-4">
+              How It Works
             </h2>
-            <p className="text-xl text-text-body mb-12 animate-fade-in font-bold">
-              We value your privacy! Make Me Productive does NOT collect or store your personal data! 🛡️<br />
-              All settings are stored locally in YOUR browser! 💻
+            <p className="text-lg text-text-body max-w-2xl mx-auto">
+              Get focused in three simple steps
             </p>
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="group">
-                <div className="text-4xl font-black bg-gradient-funky bg-clip-text text-transparent group-hover:scale-125 transition-transform duration-500 animate-pulse">🚫</div>
-                <div className="text-xl font-black text-primary mt-2">No Tracking</div>
-                <div className="text-base font-semibold text-text-muted">Zero data collection!</div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                1
               </div>
-              <div className="group">
-                <div className="text-4xl font-black bg-gradient-rainbow bg-clip-text text-transparent group-hover:scale-125 transition-transform duration-500 animate-pulse">💾</div>
-                <div className="text-xl font-black text-primary mt-2">Local Storage</div>
-                <div className="text-base font-semibold text-text-muted">Settings stay on YOUR device!</div>
+              <h3 className="text-xl font-semibold text-text-heading mb-2">Install Extension</h3>
+              <p className="text-text-body">Add Make Me Productive to Chrome with one click from the Chrome Web Store.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                2
               </div>
-              <div className="group">
-                <div className="text-4xl font-black bg-gradient-glow bg-clip-text text-transparent group-hover:scale-125 transition-transform duration-500 animate-pulse">🔍</div>
-                <div className="text-xl font-black text-primary mt-2">Open Source</div>
-                <div className="text-base font-semibold text-text-muted">Transparent & auditable!</div>
+              <h3 className="text-xl font-semibold text-text-heading mb-2">Visit YouTube</h3>
+              <p className="text-text-body">Navigate to YouTube and see distracting elements automatically hidden.</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                3
               </div>
+              <h3 className="text-xl font-semibold text-text-heading mb-2">Stay Focused</h3>
+              <p className="text-text-body">Enjoy distraction-free YouTube with customizable focus settings.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-20 text-center relative overflow-hidden">
-        {/* Final floating elements */}
-        <div className="absolute top-10 left-1/4 w-16 h-16 bg-gradient-funky rounded-full opacity-20 animate-bounce"></div>
-        <div className="absolute bottom-10 right-1/4 w-12 h-12 bg-gradient-rainbow rounded-full opacity-30 animate-pulse"></div>
-        
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-5xl md:text-6xl font-black text-text-heading mb-8 animate-fade-in">
-            🎉 Ready to Take Control of Your YouTube Time? 🎉
+      <section className="container mx-auto px-4 py-20 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-text-heading mb-6">
+            Ready to Boost Your Productivity?
           </h2>
-          <p className="text-2xl text-text-body mb-12 animate-fade-in font-bold">
-            Join users who have made their YouTube time more <span className="bg-gradient-primary bg-clip-text text-transparent">intentional</span> and <span className="bg-gradient-funky bg-clip-text text-transparent">productive</span>! 🚀
+          <p className="text-lg text-text-body mb-8">
+            Join thousands of users who have reclaimed their focus on YouTube with our privacy-first extension.
           </p>
-          <Button size="lg" className="bg-gradient-funky text-white hover:scale-125 shadow-rainbow text-2xl px-12 py-6 rounded-3xl font-black transition-all duration-500 hover:shadow-2xl animate-bounce mb-6">
-            <Zap className="w-8 h-8 mr-4 animate-pulse" />
-            🔥 Add to Chrome - It's FREE! 🔥
+          <Button size="lg" className="bg-gradient-primary text-white hover:opacity-90 shadow-elegant">
+            <Zap className="w-5 h-5 mr-2" />
+            Add to Chrome - It's Free
           </Button>
-          <p className="text-lg text-text-muted mt-6 animate-fade-in font-bold">
-            ✅ No registration required • ⚡ Works immediately • 🔒 100% private
+          <p className="text-sm text-text-muted mt-4">
+            No registration required • Works immediately • 100% private
           </p>
         </div>
       </section>
